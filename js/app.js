@@ -1,6 +1,6 @@
 
-let sing = document.getElementsByName('chanteuse');
-    song = document.getElementsByName('checkbox');
+let sing = document.getElementsByTagName('chanteuse')["Jennie" ,"Jisoo","Rosé","Lisa"];
+    song = document.getElementsByName('feat')['Kiss','BetYourWanna','IceCream','NoMore'];
     title = document.getElementById('titleJs');
     btnQuizz = document.getElementById('quizz');
     btnValid = document.getElementById('btn'),
@@ -10,6 +10,12 @@ let sing = document.getElementsByName('chanteuse');
 function change(){    
     new this.innerHTML.value; 
 };
+
+function mychange(){
+    switch
+}
+
+console.log(sing,song);
 
 btnQuizz.addEventListener('click', function(){ 
     document.getElementById('titleJs').innerHTML = `Quel talent! ${sing} est terrible dans ${song}.`
