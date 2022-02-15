@@ -18,6 +18,7 @@
 
 </head>
 <body>
+    <span id="msg"></span>
     <header>
         <!----navigation----->        
         <nav>
@@ -336,17 +337,16 @@
                 <form id="formulaire" method="">
                     <p>
                         <fieldset>
-                            <legend id="titleJs">Quelle Blink es tu?</legend>  <br><br>
-                        
+                            <legend>Quelle Blink es tu?</legend>  <br><br>
                             <label for="prefer">Quelle est ta Black Pink préférée?</label><br>
 
-                            <input class="chanteuse" type="radio" name="chanteuse" id="Jennie" value="Jennie" oninput="mychange()">
+                            <input class="chanteuse" type="radio" name="chanteuse" id="Jennie" value="Jennie" oninput="myChange()" >
                             <label for="Jennie">Jennie</label> <br>
-                            <input class="chanteuse" type="radio" name="chanteuse" id="Jisoo" value="Jisoo" oninput="mychange()">
+                            <input class="chanteuse" type="radio" name="chanteuse" id="Jisoo" value="Jisoo" oninput="myChange()">
                             <label for="Jisoo">Jisoo</label>  <br>
-                            <input class="chanteuse" type="radio" name="chanteuse" id="Rosé" value="Rosé" oninput="mychange()">
+                            <input class="chanteuse" type="radio" name="chanteuse" id="Rosé" value="Rosé" oninput="myChange()">
                             <label for="Rosé">Rosé</label> <br>
-                            <input class="chanteuse" type="radio" name="chanteuse" id="Lisa" value="Lisa" oninput="mychange()">
+                            <input class="chanteuse" type="radio" name="chanteuse" id="Lisa" value="Lisa" oninput="myChange()">
                             <label for="Lisa">Lisa</label> <br> <br>
 
                             <label for="feat">Quel est ton featuring préféré?</label><br><br>
@@ -364,8 +364,9 @@
                             <label for="No More">No More - feat BTS</label><br><br>
 
                             <button type="reset" value="reset">reset</button>
-                            <button id="quizz">clique pour voir la réponse</button>
-                            <br><br>
+                            <button id="quizz" type="submit">clique pour voir la réponse</button>
+                            <br><span id="titleJs"></span>
+                            
                         </fieldset>
                     </p>
                 </form><hr><br> 
@@ -380,7 +381,7 @@
                         <fieldset>
                             <legend>Mon compte</legend> <br>
                                 <label for="pseudo">Pseudo</label>
-                                    <input type="text" id='pseudo'onchange="change()" ><br> 
+                                    <input type="text" id='pseudo'onchange="change()"value="" ><br> 
                                         <br>
                                     <label for="mdp">Mot de passe</label>
                                     <input type="password" id="mdp" minlength="4" maxlength="20" required ><br> <br> 
@@ -389,7 +390,7 @@
                                     <input type="email" value="" id='mail' onchange="change()" placeholder="xxx@mail.com" required > <br> <br>              
 
                                     <label for="text">Première fois sur notre site? 
-                                    <button onclick="prompt('entrez votre adresse email ');alert(`Bravo vous venez de recevoir un lien d'inscription`);">click</button></label><br><br>
+                                    <button onclick="first()">click</button></label><br><br>
                                     
                                     <button id="btn" type="submit" value="submit">Envoi</button>
                                     <br><br>
