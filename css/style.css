@@ -91,7 +91,7 @@ h1{
     animation-duration: 10s;
     animation-iteration-count: 1;
 }
-@keyframes bounce {
+/* @keyframes bounce {
     from{
         margin-top: 10vh;
         font-size: 4rem;
@@ -110,7 +110,7 @@ h1{
         color: #f4a7bb;
         background-color: black;
     }  
-}
+} */
 
 /*
 ***************NAV*******************
@@ -157,7 +157,7 @@ section article p:hover{
     border: none;
 }
 
-.colle{
+/* .colle{
     animation: 4s linear infinite alternate slidein;
 }
 @keyframes slidein{
@@ -167,7 +167,7 @@ section article p:hover{
     to{
         margin-left: 5%;
     }
-}
+} */
 
 /*
 *************FILMS****************

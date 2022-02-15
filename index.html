@@ -335,20 +335,20 @@
                 </aside>  
                 <br>
     <!----------------------Quizz------------------------------->        
-                <form id="formulaire">
+                <form id="formulaire" onsubmit="myAnswer()">
                     <p>
                         <fieldset>
                             <legend id="titleJs">Quelle Blink es tu?</legend>  <br><br>
                         
                             <label for="prefer">Quelle est ta Black Pink préférée?</label><br>
 
-                            <input class="chanteuse" type="radio" name="chanteuse" id="Jennie" value="Jennie">
+                            <input class="chanteuse" type="radio" name="chanteuse" id="Jennie" value="Jennie" onchange="mychange()">
                             <label for="Jennie">Jennie</label> <br>
-                            <input class="chanteuse" type="radio" name="chanteuse" id="Jisoo" value="Jisoo">
+                            <input class="chanteuse" type="radio" name="chanteuse" id="Jisoo" value="Jisoo" onchange="mychange()">
                             <label for="Jisoo">Jisoo</label>  <br>
-                            <input class="chanteuse" type="radio" name="chanteuse" id="Rosé" value="Rosé">
+                            <input class="chanteuse" type="radio" name="chanteuse" id="Rosé" value="Rosé" onchange="mychange()">
                             <label for="Rosé">Rosé</label> <br>
-                            <input class="chanteuse" type="radio" name="chanteuse" id="Lisa" value="Lisa">
+                            <input class="chanteuse" type="radio" name="chanteuse" id="Lisa" value="Lisa" onchange="mychange()">
                             <label for="Lisa">Lisa</label> <br> <br>
 
                             <label for="feat">Quel est ton featuring préféré?</label><br><br>
@@ -366,7 +366,7 @@
                             <label for="No More">No More - feat BTS</label><br><br>
 
                             <button type="reset" value="reset">reset</button>
-                            <button id="quizz" value="submit">clique pour voir la réponse</button>
+                            <button id="quizz">clique pour voir la réponse</button>
                             <br>
                         </fieldset>
                     </p>
@@ -377,21 +377,21 @@
         <div id="contact">
             <h2>MON COMPTE</h2>
             <div class="flex w-100">
-                <form action="">
+                <form>
                     <p>
                         <fieldset>
                             <legend>Mon compte</legend> <br>
                                 <label for="pseudo">Pseudo</label>
-                                    <input type="text" value="" id='pseudo' value=""><br> 
+                                    <input type="text" value="" id='pseudo' value="" onchange="changex()"><br> 
                                         <br>
                                     <label for="mdp">Mot de passe</label>
-                                    <input type="password" value="" id="mdp" minlength="4" maxlength="20" required ><br> <br> 
+                                    <input type="password" value="" onchange="change()" id="mdp" minlength="4" maxlength="20" required ><br> <br> 
 
                                     <label for="email">Votre email</label>
-                                    <input type="email" value="" id='mail' value="" placeholder="xxx@mail.com" required> <br> <br>              
+                                    <input type="email" value="" onchange="changey()" id='mail'  placeholder="xxx@mail.com" required > <br> <br>              
 
                                     <label for="text">Première fois sur notre site? 
-                                    <button onclick="prompt('entrez votre adresse email ');alert(`Bravo vous venez de recevoir un lien d'inscription sur votre email ${email}`);">click</button></label><br><br>
+                                    <button onclick="prompt('entrez votre adresse email ');alert(`Bravo vous venez de recevoir un lien d'inscription sur votre email`);">click</button></label><br><br>
                                     
                                     <button id="btn" type="submit" value="submit">Envoi</button>
                                     <br><br>
