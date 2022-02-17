@@ -79,7 +79,7 @@ btnValid.addEventListener('click', function(e){
 
 function first(){
     let resultatPrompt = prompt("Entrez votre email");
-    if(resultatPrompt == 0 || resultatPrompt !=isNaN){
+    if(resultatPrompt == 0){
     alert(`Cette adresse n'est pas valide!`)
     }else{
     document.getElementById("msg").innerHTML = resultatPrompt;
