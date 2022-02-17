@@ -21,8 +21,11 @@ btnQuizz.addEventListener('click', function (e) {
     if (sing != null) {
         maChanteuse = sing.value;
         // console.log(machanteuse);
-
+    
+    }else{
+        maChanteuse = "Les Black Pink";
     }
+    
 
     // Je déclare un tableau vide pour le remplir un peu plus bas
     let songArray = [];
@@ -45,18 +48,27 @@ btnQuizz.addEventListener('click', function (e) {
     let mesChansons = "";
 
     for (let song of songArray) {
-        // On ajoute les chansons dans une chaîne de caractère - on concatène ce qu'il y avait déjà avant +=
-        mesChansons +=  song;
-    
+        // On ajoute les chansons dans une chaîne de caractère - on concatène ce qu'il y avait déjà avant +=           
+            mesChansons +=  song;
+
+            
         // Ici on ajoute la virgule partout sauf au dernier élément 
         // Si la taille de mon tableau - 1 est différent de l'index de l'élement en cours alors on va ajouter une virgule
         if (songArray.length - 1 !== songArray.indexOf(song)) {   
             mesChansons +=  ', '
-        }
+        };
     };
 
-    // Affichage du message dans le btn 
-    titleJS.innerHTML = `${maChanteuse} est vraiment super <br> dans ${mesChansons} <br>`;
+
+    //on vérifie qu'un input a bien été sélectionné
+    if(mesChansons == false){
+
+        mesChansons = "toutes les chansons";
+    }
+
+
+    // Affichage du message dans le h4 
+    titleJS.innerHTML = `Super top ${maChanteuse} dans ${mesChansons} <br>`;
 
 });
 
