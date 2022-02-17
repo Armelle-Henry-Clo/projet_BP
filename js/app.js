@@ -56,7 +56,7 @@ btnQuizz.addEventListener('click', function (e) {
     };
 
     // Affichage du message dans le btn 
-    btnQuizz.innerHTML = `${maChanteuse} est vraiment super <br> dans ${mesChansons} <br>`;
+    titleJS.innerHTML = `${maChanteuse} est vraiment super <br> dans ${mesChansons} <br>`;
 
 });
 
@@ -66,23 +66,25 @@ function change(){
     new this.innerHTML.value; 
 };
 
+
 btnValid.addEventListener('click', function(e){ 
     e.preventDefault();
 
-    if(x.value != null && y.value != null){       
+    if(x.value != null && y.value.match(/[a-z0-9_\-\.]+@[a-z0-9_\-\.]+\.[a-z]+/i)){       
     document.getElementById('alert').innerHTML = 
     `Bonjour ${x.value} Bienvenue sur ton espace Black Pink! Reçois des news de tes chanteuses préférées sur ${y.value}`
     }else{
-        document.getElementById('alert').innerHTML = 'Pas encore inscrit? Cliquez au dessus!';   
+        document.getElementById('alert').innerHTML = 'Oops! Ton mail et/ou ton pseudo ne sont pas valide!';   
     }
 })
 
+
 function first(){
     let resultatPrompt = prompt("Entrez votre email");
-    if(resultatPrompt == 0){
-    alert(`Cette adresse n'est pas valide!`)
+    if(resultatPrompt.match(/[a-z0-9_\-\.]+@[a-z0-9_\-\.]+\.[a-z]+/i)){
+    alert(`Bravo! Bientôt des news sur ton mail: ${resultatPrompt}`);
     }else{
     document.getElementById("msg").innerHTML = resultatPrompt;
-    alert (`Bravo! Bientôt des news sur ton mail: ${resultatPrompt}`);
+    alert (`Cette adresse n'est pas valide!`);
     }
 };
