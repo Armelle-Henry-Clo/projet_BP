@@ -69,7 +69,7 @@ function change(){
 btnValid.addEventListener('click', function(e){ 
     e.preventDefault();
 
-    if(x.value != 0 && y.value != 0){       
+    if(x.value != null && y.value != null){       
     document.getElementById('alert').innerHTML = 
     `Bonjour ${x.value} Bienvenue sur ton espace Black Pink! Reçois des news de tes chanteuses préférées sur ${y.value}`
     }else{
