@@ -3,7 +3,7 @@ Fan Base BlackPink
 
 Ce projet a été réalisé pour deux fans inconditionnels de BlackPink.
 
-Le but principal était d'écrire l'HTML assez rapidement pour se concentrer sur le CSS.
+Le but principal était d'écrire l'HTML assez rapidement pour se concentrer sur le CSSbut
 J'ai pu appliquer un maximum de style CSS, sans trop surcharger la page. 
   -animation
   -transition
