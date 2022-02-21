@@ -84,7 +84,7 @@ btnValid.addEventListener('click', function(e){
 
     if(x.value != null && y.value.match(/[a-z0-9_\-\.]+@[a-z0-9_\-\.]+\.[a-z]+/i)){       
     document.getElementById('alert').innerHTML = 
-    `Bonjour ${x.value} Bienvenue sur ton espace Black Pink! Reçois des news de tes chanteuses préférées sur ${y.value}`
+    `Bonjour ${x.value} Bienvenue sur ton espace Black Pink!<br> Reçois des news de tes chanteuses préférées sur ${y.value}`
     }else{
         document.getElementById('alert').innerHTML = 'Oops! Ton mail et/ou ton pseudo ne sont pas valide!';   
     }

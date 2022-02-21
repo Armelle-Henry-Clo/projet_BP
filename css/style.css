@@ -234,7 +234,7 @@ fieldset{
     background-color: rgba(0, 0, 0, 0.92);
     padding: 10px 0 0 10px;
     position: relative;
-    height: 85vh;
+    height: 90%;
     min-width: 35vw;
 } 
 
@@ -274,7 +274,7 @@ input[checkbox]{
 form fieldset p{
     color:#f4a7bb;
     height: 50vh;
-    width: 90vw;
+    width: 90%;
 }
 
 .reponse{
